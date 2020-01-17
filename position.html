@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Position Absolute and Relative Example</title>
+</head>
+<style>
+.parent {
+  border: 2px black dotted;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+#two {
+  top: 20px;
+  left: 20px;
+  background: green;
+  /* position: absolute; */
+  /* position: relative; */
+}
+
+</style>
+<body>
+<div class="parent">
+  <div class="box" id="one">One</div>
+  <div class="box" id="two">Two</div>
+  <div class="box" id="three">Three</div>
+  <div class="box" id="four">Four</div>
+</div>
+  
+</body>
+</html>
+
+<!-- position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent’s position and changing the layout around it. -->
+
+
+<!-- By default:
+Position:Static:
+By default, position an element based on its current position in the flow.
+The top, right, bottom, left and z-index properties do not apply.   
+Position:relative
+Position an element based on its current position without changing layout.
+position:absolute
+Position an element based on its closest positioned ancestor position. -->
